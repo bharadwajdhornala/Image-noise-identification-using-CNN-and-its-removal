@@ -13,6 +13,7 @@ Replaces the center value of the sliding window with median of all other values 
                               S(i,j) = Median(k,l)ϵ Wm,n{D(i+k, j+l)}
                               
 Where Wm,n is a sliding window of size mn pixels centred at coordinates (i, j). The median value is calculated by using equation with ns= mn.
+
 Weighted Median Filter –
 The operations involved in WMF are like SMF, except that WMF has weight associated with each of its filter element. 
                           S(i, j)=Median(k,l)ϵ Wm,n {Wm,n (k,lD(i+k, j+l)
