@@ -11,16 +11,19 @@ Prior to de-noising step, the image should be tested for the identification of n
 Standard Median Filter –
 Replaces the center value of the sliding window with median of all other values in sliding window.
                               S(i,j) = Median(k,l)ϵ Wm,n{D(i+k, j+l)}
+															
             Where Wm,n is a sliding window of size mn pixels centred at coordinates (i, j). The median value is calculated by using equation with ns= mn.
 Weighted Median Filter –
 The operations involved in WMF are like SMF, except that WMF has weight associated with each of its filter element. 
-                          S(i, j)=Median(k,l)ϵ Wm,n {Wm,n (k,lD(i+k, j+l) 
+                          S(i, j)=Median(k,l)ϵ Wm,n {Wm,n (k,lD(i+k, j+l)
+													
              Where operator indicates repetition operation. The median value is calculated using equation (1) with ns is equal to the total of Wm,n(k,l).
              
 # Evaluation Parameters
 PEAK SIGNAL TO NOISE RATIO (PSNR):
           The higher the PSNR, the better the quality of the compressed, or reconstructed image.              
           Formula for calculating PSNR-    PSNR = 10 * log10(R^2 / MSE)
+					
 MEAN SQUARED ERROR (MSE):
           MSE represents the cumulative squared error between the compressed and the original image, whereas PSNR represents a measure of the peak error. 
            The lower the value of MSE, the lower the error.
